@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{115D1E92-B68B-4DEA-B16D-8B26566E840B}</ProjectGuid>
+    <ProjectGuid>{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GraphicalEditor.Tests</RootNamespace>
-    <AssemblyName>GraphicalEditor.Tests</AssemblyName>
+    <RootNamespace>GraphicalLibrary.Tests</RootNamespace>
+    <AssemblyName>GraphicalLibrary.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -34,9 +34,9 @@
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GraphicalEditor\GraphicalEditor.csproj">
-      <Project>{C2A67DAF-7ED4-4ECA-A5BB-C283C7FD5BF9}</Project>
-      <Name>GraphicalEditor</Name>
+    <ProjectReference Include="..\GraphicalLibrary\GraphicalLibrary.csproj">
+      <Project>{C1AEFAA0-EF90-4A65-82CD-B055909FE675}</Project>
+      <Name>GraphicalLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
