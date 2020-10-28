@@ -49,8 +49,8 @@ namespace GraphicalLibrary
 				case "L":
 					// L X Y C
 
-					x = int.Parse(input[1]) - 1;
-					y = int.Parse(input[2]) - 1;
+					x = int.Parse(input[1]);
+					y = int.Parse(input[2]);
 					c = char.Parse(input[3]);
 
 					ColorPixel(x, y, c);
@@ -138,7 +138,7 @@ namespace GraphicalLibrary
 		public static void ColorPixel(int x, int y, char c)
 		{
 
-			image[y, x] = c.ToString();
+			image[y - 1, x -1] = c.ToString();
 		}
 
 		// V X Y1 Y2 C. Draw a vertical segment of colour C in column Xbetween rows Y1 and Y2 (inclusive).
