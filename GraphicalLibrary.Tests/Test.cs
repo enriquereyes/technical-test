@@ -41,5 +41,24 @@ namespace GraphicalLibrary.Tests
 			GraphicEditor.ClearTable();
 			Assert.AreEqual(testImage, GraphicEditor.image);
 		}
+
+		[Test()]
+		public void TestColorPixel()
+		{
+			int m = 5;
+			int n = 6;
+			char c = 'A';
+
+
+			string[,] testImage = new string[,] {   { "O", "O", "O", "O", "O", "O" },
+												  	{ "O", "O", "O", "O", "O", "O" },
+												 	{ "O", "A", "O", "O", "O", "O" },
+													{ "O", "O", "O", "O", "O", "O" },
+													{ "O", "O", "O", "O", "O", "O" } };
+
+			GraphicEditor.CreateImage(n, m);
+			GraphicEditor.ColorPixel(2, 3, c);
+			Assert.AreEqual(testImage, GraphicEditor.image);
+		}
 	}
 }
