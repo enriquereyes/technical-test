@@ -14,12 +14,23 @@ namespace GraphicalLibrary
 
 		public static void InteractiveConsole(List<string> input)
 		{
+			int m;
+			int n;
+			int x;
+			int y;
+			int y1;
+			int y2;
+			char c;
+
+			
 			switch (input[0])
 			{
 				case "I":
-					int m = int.Parse(input[1]);
-					int n = int.Parse(input[2]);
+					m = int.Parse(input[1]);
+					n = int.Parse(input[2]);
+
 					CreateImage(m, n);
+
 					break;
 
 				case "C":
@@ -28,10 +39,24 @@ namespace GraphicalLibrary
 
 
 				case "L":
-					int x = int.Parse(input[2]) - 1;
-					int y = int.Parse(input[1]) - 1;
-					char c = char.Parse(input[3]);
+					x = int.Parse(input[1]) - 1;
+					y = int.Parse(input[2]) - 1;
+					c = char.Parse(input[3]);
+
 					ColorPixel(x, y, c);
+
+					break;
+
+
+				case "V":
+					// V X Y1 Y2 C
+					x = int.Parse(input[1]);
+					y1 = int.Parse(input[2]);
+					y2 = int.Parse(input[3]);;
+					c = char.Parse(input[4]);;	
+
+                    DrawVertical(x, y1, y2, c);
+
 					break;
 
 
@@ -72,7 +97,12 @@ namespace GraphicalLibrary
 
 		public static void ColorPixel(int x, int y, char c)
 		{
-			image[x, y] = c.ToString();
+			image[y, x] = c.ToString();
+		}
+
+		public static void DrawVertical(int x, int y1, int y2, char c)
+		{
+			
 		}
 
 
