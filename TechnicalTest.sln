@@ -8,9 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicalEditor.Tests", "GraphicalEditor.Tests\GraphicalEditor.Tests.csproj", "{115D1E92-B68B-4DEA-B16D-8B26566E840B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicalLibrary", "GraphicalLibrary\GraphicalLibrary.csproj", "{C1AEFAA0-EF90-4A65-82CD-B055909FE675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicalLibrary.Tests", "GraphicalLibrary.Tests\GraphicalLibrary.Tests.csproj", "{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,14 +22,14 @@ Global
 		{C2A67DAF-7ED4-4ECA-A5BB-C283C7FD5BF9}.Debug|x86.Build.0 = Debug|x86
 		{C2A67DAF-7ED4-4ECA-A5BB-C283C7FD5BF9}.Release|x86.ActiveCfg = Release|x86
 		{C2A67DAF-7ED4-4ECA-A5BB-C283C7FD5BF9}.Release|x86.Build.0 = Release|x86
-		{115D1E92-B68B-4DEA-B16D-8B26566E840B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{115D1E92-B68B-4DEA-B16D-8B26566E840B}.Debug|x86.Build.0 = Debug|Any CPU
-		{115D1E92-B68B-4DEA-B16D-8B26566E840B}.Release|x86.ActiveCfg = Release|Any CPU
-		{115D1E92-B68B-4DEA-B16D-8B26566E840B}.Release|x86.Build.0 = Release|Any CPU
 		{C1AEFAA0-EF90-4A65-82CD-B055909FE675}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{C1AEFAA0-EF90-4A65-82CD-B055909FE675}.Debug|x86.Build.0 = Debug|Any CPU
 		{C1AEFAA0-EF90-4A65-82CD-B055909FE675}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1AEFAA0-EF90-4A65-82CD-B055909FE675}.Release|x86.Build.0 = Release|Any CPU
+		{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}.Debug|x86.Build.0 = Debug|Any CPU
+		{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}.Release|x86.ActiveCfg = Release|Any CPU
+		{C8F10DA8-E510-4C05-A27B-ECC89CD14DDA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
