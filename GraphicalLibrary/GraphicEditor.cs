@@ -18,6 +18,8 @@ namespace GraphicalLibrary
 			int n;
 			int x;
 			int y;
+			int x1;
+			int x2;
 			int y1;
 			int y2;
 			char c;
@@ -57,6 +59,17 @@ namespace GraphicalLibrary
 
                     DrawVertical(x, y1, y2, c);
 
+					break;
+
+				case "H":
+					// H X1 X2 Y C. 
+					x1 = int.Parse(input[1]) -1;
+					x2 = int.Parse(input[2]) - 1;
+					y = int.Parse(input[3]) - 1;
+					c = char.Parse(input[4]);
+
+
+					DrawHorizontal(x1, x2, y, c);
 					break;
 
 
@@ -105,6 +118,14 @@ namespace GraphicalLibrary
 			for (int i = y1; i <= y2; i++)
 			{
 				image[i, x] = c.ToString();
+			}
+		}
+
+		public static void DrawHorizontal(int x1, int x2, int y, char c)
+		{
+			for (int i = x1; i <= x2; i++)
+			{
+				image[y, i] = c.ToString();
 			}
 		}
 
