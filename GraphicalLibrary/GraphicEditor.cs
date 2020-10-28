@@ -26,6 +26,11 @@ namespace GraphicalLibrary
                 	ClearTable();
 					break;
 
+
+				case "S":
+                    DisplayImage();
+					break;
+
 			}
 
 		}
@@ -55,6 +60,22 @@ namespace GraphicalLibrary
 					image[i, j] = "O";
 				}
 			}
+		}
+
+
+		public static void DisplayImage()
+		{
+			int rowLength = image.GetLength(0);
+			int colLength = image.GetLength(1);
+
+			for (int i = 0; i < rowLength; i++)
+			{
+				for (int j = 0; j < colLength; j++)
+				{
+					Console.Write(string.Format("{0}", image[i, j]));
+				}
+				Console.Write("\n");
+			
 		}
 
 
