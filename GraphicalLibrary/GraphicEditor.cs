@@ -22,6 +22,10 @@ namespace GraphicalLibrary
 					CreateImage(m, n);
 					break;
 
+				case "C":
+                	ClearTable();
+					break;
+
 			}
 
 		}
@@ -37,6 +41,20 @@ namespace GraphicalLibrary
 				}
 			}
 
+		}
+
+		public static void ClearTable()
+		{
+			int rowLength = image.GetLength(0);
+			int colLength = image.GetLength(1);
+
+			for (int i = 0; i < rowLength; i++)
+			{
+				for (int j = 0; j < colLength; j++)
+				{
+					image[i, j] = "O";
+				}
+			}
 		}
 
 
