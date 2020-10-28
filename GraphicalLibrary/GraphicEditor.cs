@@ -50,10 +50,10 @@ namespace GraphicalLibrary
 
 				case "V":
 					// V X Y1 Y2 C
-					x = int.Parse(input[1]);
-					y1 = int.Parse(input[2]);
-					y2 = int.Parse(input[3]);;
-					c = char.Parse(input[4]);;	
+					x = int.Parse(input[1]) -1;
+					y1 = int.Parse(input[2]) - 1;
+					y2 = int.Parse(input[3]) - 1;
+					c = char.Parse(input[4]);	
 
                     DrawVertical(x, y1, y2, c);
 
@@ -102,7 +102,10 @@ namespace GraphicalLibrary
 
 		public static void DrawVertical(int x, int y1, int y2, char c)
 		{
-			
+			for (int i = y1; i <= y2; i++)
+			{
+				image[i, x] = c.ToString();
+			}
 		}
 
 
