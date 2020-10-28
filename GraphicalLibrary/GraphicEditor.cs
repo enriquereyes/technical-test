@@ -23,12 +23,20 @@ namespace GraphicalLibrary
 					break;
 
 				case "C":
-                	ClearTable();
+					ClearTable();
+					break;
+
+
+				case "L":
+					int x = int.Parse(input[2]) - 1;
+					int y = int.Parse(input[1]) - 1;
+					char c = char.Parse(input[3]);
+					ColorPixel(x, y, c);
 					break;
 
 
 				case "S":
-                    DisplayImage();
+					DisplayImage();
 					break;
 
 			}
@@ -62,6 +70,11 @@ namespace GraphicalLibrary
 			}
 		}
 
+		public static void ColorPixel(int x, int y, char c)
+		{
+			image[x, y] = c.ToString();
+		}
+
 
 		public static void DisplayImage()
 		{
@@ -75,9 +88,10 @@ namespace GraphicalLibrary
 					Console.Write(string.Format("{0}", image[i, j]));
 				}
 				Console.Write("\n");
-			
+
+			}
+
+
 		}
-
-
 	}
 }
